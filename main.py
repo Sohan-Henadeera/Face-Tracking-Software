@@ -20,7 +20,8 @@ with mp_face_detection.FaceDetection(min_detection_confidence=0.2) as face_detec
                 mp_drawing.draw_detection(frame, detection)
 
         cv2.imshow('Face Tracker v1', frame)
-
+        
+# close program with key
         if cv2.waitKey(5) & 0xFF == ord('q'):
             break
 
